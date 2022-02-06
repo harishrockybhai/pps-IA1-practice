@@ -8,7 +8,7 @@ int input_array_size()
 }
 void input_array(int n, int a[n])
 {
-  int i=0;
+  int i;
   for(i=0; i<n; i++)
   {
     printf("enter the array numbers :");
@@ -17,8 +17,9 @@ void input_array(int n, int a[n])
 }
 int sum_n_arrays(int n, int a[n])
 {
-  int i=0;
-  for(i=0; i<=n; i++)
+  int i, sum;
+
+  for(i=0; i<n; i++)
   {
     sum=sum+a[i];
   }
@@ -27,15 +28,15 @@ int sum_n_arrays(int n, int a[n])
 void out_put(int n , int a[n], int sum)
 {
   int j;
-  for(j=0; j<=n; j++)
+  for(j=0; j<n-1; j++)
   {
     printf("%d +",a[j]);
   }
-  printf("%d is %d",j,sum);
+  printf("%d is %d",a[n-1],sum);
 }
 int main()
 {
-  int n, a, sum;
+  int  n, a[n], sum;
   n=input_array_size();
   input_array(n,a);
   sum=sum_n_arrays(n,a);

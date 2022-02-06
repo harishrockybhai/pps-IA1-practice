@@ -30,6 +30,6 @@ int main()
   n=input_n();
   sum=sum_n(n);
   output(n,sum);
-
+  return 0;
 
 }

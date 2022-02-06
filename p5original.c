@@ -2,7 +2,7 @@
 float input()
 {
   float a; 
-  printf("enter the square the root of a number :");
+  printf("enter the square root of a number :");
   scanf("%f",&a);
   return a;
 }
